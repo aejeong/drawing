@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #555555;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+}
+
+.container{
+    display: inline-block;
+    width:300px;
+    height: 300px;
+    margin:0 30px;
+    color: white;
+    position: relative;
+}
+
+.container div{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+
+
+button{
+    border: 1px solid white;
+    padding: 10px 15PX 10px 10PX;
+    border-radius: 35% 80% 33% 40%;
+    background: none;
+    color: white;
+}
+
+span{
+    position: absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:300px;
+    height: 300px;
+    border:1px solid white;
+    border-radius: 50% 45% 65% 50% / 40% 25% 45% 40%;
+    transition:0.5s;
+}
+
+.container:nth-of-type(1):hover span{
+    background-color: red;
+    border:none;
+}
+.container:nth-of-type(2):hover span{
+    background-color: dodgerblue;
+    border:none;
+}
+.container:nth-of-type(3):hover span{
+    background-color: greenyellow;
+    border:none;
+}
+
+.container:hover span:nth-of-type(1){
+    opacity: 0.3;
+}
+.container:hover span:nth-of-type(2){
+    opacity: 0.5;
+}
+.container:hover span:nth-of-type(3){
+    opacity: 0.8;
+}
+
+.container span:nth-of-type(1){
+    animation: border 6s linear infinite;
+}
+
+.container span:nth-of-type(2){
+    animation: border 4s linear infinite;
+    animation-direction: reverse;
+}
+
+
+.container span:nth-of-type(3){
+    animation: border 10s linear infinite;
+}
+
+
+@keyframes border{
+0%{
+    transform: rotate(0);
+}
+100%{
+    transform: rotate(360deg);
+}
+}

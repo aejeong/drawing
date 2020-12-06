@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #dce2e2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+}
+
+.icon{
+    display:inline-block;
+    position: relative;
+}
+
+.icon span{
+    opacity: 0;
+    transition: 0.3s;
+    background-color: black;
+    padding:15px;
+    color:white;
+    width:300px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top:-100px;
+    left:50%;
+    transform: translate(-50%);
+    visibility: hidden;
+}
+
+.icon:hover span{
+opacity: 1;
+visibility: visible;
+}
+
+.icon span:before{
+    content:"";
+    position: absolute;
+    display:inline-block;
+    background-color: black;
+    width:10px;
+    height:10px;
+    bottom:-5px;
+    left:50%;
+    transform: rotate(45deg);
+}
