@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #dce2e2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    font-size: 25px;
+    margin:15px;
+    text-decoration: none;
+    color:black;
+    display:block;
+}
+
+.gnb a{
+
+}
+
+.gnb a:before{}
+.gnb a:after{
+    content:"by crast";
+    font-size: 12px;
+    background-color: rosybrown;
+    margin-left:10px;
+    padding:2px;
+    border-radius: 20%;
+    color:white
+}
