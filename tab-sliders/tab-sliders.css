@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:#222;
+}
+
+.tab-inner{
+border:1px solid red;
+width: 100%;
+text-align: center;
+position: relative;
+}
+
+.inner-slide{
+    width: 800px;
+    height: 300px;
+}
+
+.inner-slide .content{
+    border:1px solid blue;
+}
+.inner-slide .content img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.inner-slide .content p{
+    font-size: 20px;
+    color:gray;
+}
+input[name=tabmenu]{
+    display: none;
+}
+
+.btn label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3]{
+    background-color: crimson;
+}
+
