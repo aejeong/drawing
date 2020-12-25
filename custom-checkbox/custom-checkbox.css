@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    font-size: 25px;
+    margin:15px;
+    text-decoration: none;
+    color:black;
+    display:block;
+}
+
+.custom{
+    margin:10px;
+}
+
+.custom label{
+    cursor: pointer;
+}
+
+.custom input[type=checkbox],
+.custom input[type=radio]{
+display: none;
+}
+
+.custom label em{
+    /* border:1px solid red; */
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-position: left center;
+}
+
+.custom:nth-child(1) label em{
+    background:url(./images/checkbox-01.png) no-repeat;
+}
+.custom:nth-child(2)  label em{
+    background:url(./images/checkbox-02.png) no-repeat;
+}
+.custom:nth-child(3) label em{
+    background:url(./images/checkbox-03.png) no-repeat;
+}
+.custom:nth-child(4)  label em{
+    background:url(./images/checkbox-04.png) no-repeat;
+}
+.custom:nth-child(5) label em{
+    background:url(./images/radio-01.png) no-repeat;
+}
+.custom:nth-child(6) label em{
+    background:url(./images/radio-01.png) no-repeat;
+}
+
+.custom input[type=checkbox]:checked + label em,
+.custom input[type=radio]:checked + label em{
+background-position: right center;
+}
