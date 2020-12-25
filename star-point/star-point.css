@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #dce2e2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.star-rating{
+    border-radius: 5px;
+    background-color: #333;
+width: 300px;
+padding:20px;
+overflow: hidden;
+box-sizing: border-box;
+}
+
+.star-rating div{
+    width: 50%;
+}
+.stars{
+    float: left;
+
+}
+.stars .fa{
+    font-size: 18px;
+cursor: pointer;
+}
+.stars .fa.active{
+    color:yellow;
+    text-shadow: 0 10px 10px rgba(241, 224, 67, 0.2);
+}
+.print{
+    text-align: end;
+    float:right;
+    color:#fff;
+}
+
+.print img{
+    margin-right: 10px;
+    vertical-align: text-top;
+}
