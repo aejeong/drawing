@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.navi{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    margin:0;
+    padding: 0;
+    z-index: 1;
+}
+.navi li{}
+.navi li a{
+    font-size: 4em;
+    font-weight: 600;
+    position: relative;
+}
+.navi li a:before{
+    position: absolute;
+    content: attr(data-text);
+    color:yellowgreen;
+    top:0;
+    left:0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.navi li a:hover::before{
+    width: 100%;
+}
+
+.photo{
+background-color: #ccc;
+position: absolute;
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+background: url(./images/portrait-01.jpg)no-repeat center center;
+background-size: cover;
+transition: 0.5s;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change bg</title>
+    <link rel="stylesheet" href="./hover-change-bg.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <ul class="navi">
+            <li data-img="./images/portrait-01.jpg" ><a href="#none" onmouseover="changeBackground(event)" data-text="ABOUT">ABOUT</a></li>
+            <li data-img="./images/portrait-02.jpg" ><a href="#none" onmouseover="changeBackground(event)" data-text="INSTRUCTOR">INSTRUCTOR</a></li>
+            <li data-img="./images/portrait-03.jpg" ><a href="#none" onmouseover="changeBackground(event)" data-text="CLASS">CLASS</a></li>
+            <li data-img="./images/portrait-04.jpg" ><a href="#none" onmouseover="changeBackground(event)" data-text="LOCATION">LOCATION</a></li>
+        </ul>
+        <div class="photo"></div>
+    </div>
+    <script src="./hover-change-bg.js"></script>
+</body>
+</html>

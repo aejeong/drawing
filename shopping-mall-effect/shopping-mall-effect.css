@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #dce2e2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    display:inline-block;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin:0
+}
+
+.item{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.item img{
+    filter:blur(0);
+    transition: 0.2s;
+}
+.detail{
+    position: absolute;
+    width: 100%;
+    bottom:-180px;
+    /* bottom:0px; */
+
+    left:0;
+    height: 55%;
+    background-color: #fff;
+    transition: 0.3s;
+    padding:15px 20px;
+    box-sizing: border-box;
+}
+
+ img:hover{
+    filter:blur(2px);
+}
+
+.item:hover .detail{
+    bottom:0;
+}
+
+.title{
+    border-bottom:1px solid #ddd;
+    overflow: hidden;
+}
+.title h2 em{
+    font-style: normal;
+    display: block;
+    margin-bottom:5px;
+    color:black;
+    font-weight: bold;
+}
+
+.title h2{
+    float:left;
+    font-size: 16px;
+    color:#555;
+    margin-bottom:10px;
+}
+.title span{
+    float:right;
+    color:crimson;
+    font-weight: bold;
+}
+
+.info{
+    position: relative;
+    margin-bottom:10px;
+}
+
+.size{
+
+}
+.size label,
+.color label{
+    font-weight: bold;
+    display: block;
+    margin:10px 0;
+}
+.size span{
+    display: inline-block;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    margin-right:5px;
+    cursor: pointer;
+    background-color: #fff;
+
+}
+
+.size span.active{
+    background-color: black;
+    color:white;
+    border-radius: 4px;
+    padding:5px
+}
+
+.color span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    /* background-color:yellowgreen; */
+}
+.color span.active{
+    border-radius: 50%;
+}
+
+.color span:nth-of-type(1){
+    background-color:#808000;
+}
+
+.color span:nth-of-type(2){
+    background-color:#ff0000;
+}
+.color span:nth-of-type(3){
+    background-color:#ffc0cb;
+}
+.color span:nth-of-type(4){
+    background-color:#00ffff;
+}
+.color span:nth-of-type(5){
+    background-color:#0000ff;
+}
+
+.add-cart{
+    border:1px solid #ddd;
+    width: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.add-cart:hover{
+    background-color: #000;
+    color:#fff;
+}
+
+.like:before{
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 22px;
+    content:'\f004';
+    font-family:"Font Awesome 5 Free";
+    color:#bbb;
+}
+
+.like.active:before{
+content:'\f598';
+font-family:"Font Awesome 5 Free";
+color:crimson;
+}

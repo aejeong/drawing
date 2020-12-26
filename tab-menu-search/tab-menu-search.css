@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #dce2e2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+section{
+    /* border:1px solid black; */
+    width: 800px;
+}
+section input[type=text]{
+margin-top:10px;
+width: inherit;
+height: 40px;
+padding-left:40px;
+border-radius: 5px;
+border:none;
+background: #fff url(./images/search-icon.png) no-repeat center left 10px;
+background-size: 23px;
+outline: none;
+
+
+}
+section input[type=text]::placeholder{
+    transition: 0.5s;
+}
+section input[type=text]:focus::placeholder{
+opacity: 0;
+}
+.btn{
+    list-style-type: none;
+    padding:0;
+    margin:20px 0 0 0;
+    overflow: hidden;
+}
+.btn li{
+    float:left;
+    /* border:1px solid #000; */
+    background-color: rgb(206, 202, 202);
+    text-align: center;
+    cursor: pointer;
+    padding:10px 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #dddddd;
+    border-top:5px solid transparent;
+}
+
+.btn li:last-child{
+    border-right: none;
+}
+.btn li.active,
+.btn li:hover{
+    background-color: #fff;
+    border-top:5px solid rgba(253, 144, 104, 0.836);
+}
+
+.tabs div{
+    background-color: #fff;
+    /* border:1px solid #000; */
+    height: 300px;
+    border-radius: 0 0 5px 5px;
+    display: none;
+}
+
+.tabs div.active{
+    display:block;
+}
+
+.tabs div h2{
+    margin:0;
+    padding-top:20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tabs div img{
+    float:left;
+    width: 150px;
+    margin:30px;
+}
+
+.tabs div p{
+    padding: 25px 25px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab-menu-search</title>
+    <link rel="stylesheet" href="./tab-menu-search.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <input type="text" placeholder="What are you looking for?">
+        <ul class="btn">
+            <li data-attr="tab1"onclick="activeTab(event)" class="active">HTML5</li>
+            <li data-attr="tab2"onclick="activeTab(event)">CSS3</li>
+            <li data-attr="tab3"onclick="activeTab(event)">Javascript</li>
+            <li data-attr="tab4"onclick="activeTab(event)">Angular</li>
+            <li data-attr="tab5"onclick="activeTab(event)">CSS FRAMEWORKS</li>
+        </ul>
+        <div class="tabs">
+            <div id="tab1" class="active">
+                <h2>HTML5</h2>
+                <img src="./images/platform-logo-01.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum laborum illum dolorum alias, repellat possimus doloribus. Earum quas ut quaerat quasi corrupti architecto aperiam perferendis porro nostrum fuga molestias culpa suscipit quo qui alias optio distinctio, officia iure at? Expedita neque ut ducimus, praesentium eveniet accusamus ad soluta fuga?</p>
+            </div>
+            <div id="tab2">
+                <h2>CSS</h2>
+                <img src="./images/platform-logo-02.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quasi amet nisi dicta voluptates adipisci ex tempore aliquam debitis sunt sequi quisquam, et accusamus consequatur? Corporis asperiores provident, a mollitia alias illo nihil similique voluptates? Debitis, voluptatem mollitia minus ea eius quod itaque autem id expedita, minima veritatis laudantium vero.</p>
+            </div>
+            <div id="tab3">
+                <h2>Javascript</h2>
+                <img src="./images/platform-logo-03.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quasi amet nisi dicta voluptates adipisci ex tempore aliquam debitis sunt sequi quisquam, et accusamus consequatur? Corporis asperiores provident, a mollitia alias illo nihil similique voluptates? Debitis, voluptatem mollitia minus ea eius quod itaque autem id expedita, minima veritatis laudantium vero.</p>
+            </div>
+            <div id="tab4">
+                <h2>Angular</h2>
+                <img src="./images/platform-logo-04.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quasi amet nisi dicta voluptates adipisci ex tempore aliquam debitis sunt sequi quisquam, et accusamus consequatur? Corporis asperiores provident, a mollitia alias illo nihil similique voluptates? Debitis, voluptatem mollitia minus ea eius quod itaque autem id expedita, minima veritatis laudantium vero.</p>
+            </div>
+            <div id="tab5">
+                <h2>CSS FRAMEWORKS</h2>
+                <img src="./images/platform-logo-05.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quasi amet nisi dicta voluptates adipisci ex tempore aliquam debitis sunt sequi quisquam, et accusamus consequatur? Corporis asperiores provident, a mollitia alias illo nihil similique voluptates? Debitis, voluptatem mollitia minus ea eius quod itaque autem id expedita, minima veritatis laudantium vero.</p>
+            </div>
+        </div>
+    </section>
+    <script src="./tab-menu-search.js"></script>
+</body>
+</html>

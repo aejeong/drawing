@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+color:black;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+
+
+
+/* layout */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section article{
+    width: 980px;
+}
+.content{
+
+}
+.content > div{
+    width: 50%;
+    float:left;
+    box-sizing: border-box;
+}
+.accordion{}
+.accordion .title{
+    border:1px solid #ddd;
+    padding:10px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+transition: 0.3s;
+margin-bottom: 10px;
+}
+.accordion .title:after{
+    content:'\f0a4';
+    font-family:"Font Awesome 5 Free";
+    /* font-family:fontawesome; */
+    top:12px;
+    position: absolute;
+    right:10px;
+}
+.accordion .title.active:after{
+    transform: rotate(90deg);
+    color:darkorange;
+}
+.accordion .title.active,
+.accordion .title:hover{
+background-color: #203049;
+color:#fff;
+}
+.accordion .desc{
+    padding:15px;
+    display: none;
+    transition: 0.3s;
+
+}
+.accordion .desc.active{
+    display: block;
+}
+.image{
+    
+}
